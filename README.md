@@ -1,1 +1,1 @@
-# zanta-xmd-pair-web
+# PAIR-WEB-SC
