@@ -1,44 +1,4 @@
 const { makeid } = require('./gen-id');
-const express = require('express');
-const fs = require('fs');
-let router = express.Router();
-const pino = require("pino");
-const { default: makeWASocket, useMultiFileAuthState, delay, Browsers, makeCacheableSignalKeyStore, getAggregateVotesInPollMessage, DisconnectReason, WA_DEFAULT_EPHEMERAL, jidNormalizedUser, proto, getDevice, generateWAMessageFromContent, fetchLatestBaileysVersion, makeInMemoryStore, getContentType, generateForwardMessageContent, downloadContentFromMessage, jidDecode } = require('@whiskeysockets/baileys')
-
-const { upload } = require('./mega');
-function removeFile(FilePath) {
-    if (!fs.existsSync(FilePath)) return false;
-    fs.rmSync(FilePath, { recursive: true, force: true });
-}
-router.get('/', async (req, res) => {
-    const id = makeid();
-    let num = req.query.number;
-    async function GIFTED_MD_PAIR_CODE() {
-        const {
-            state,
-            saveCreds
-        } = await useMultiFileAuthState('./temp/' + id);
-        try {
-var items = ["Safari"];
-function selectRandomItem(array) {
-  var randomIndex = Math.floor(Math.random() * array.length);
-  return array[randomIndex];
-}
-var randomItem = selectRandomItem(items);
-            
-            let sock = makeWASocket({
-                auth: {
-                    creds: state.creds,
-                    keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
-                },
-                printQRInTerminal: false,
-                generateHighQualityLinkPreview: true,
-                logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                syncFullHistory: false,
-                browser: Browsers.macOS(randomItem)
-            });
-            if (!sock.authState.creds.registered) {
-                await delay(1500);
                 num = num.replace(/[^0-9]/g, '');
                 const code = await sock.requestPairingCode(num);
                 if (!res.headersSent) {
@@ -75,16 +35,32 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "ZANTA-XMD=" + string_session;
+                        let md = "𝚀𝚄𝙴𝙴𝙽-𝚂𝙰𝙽𝚄=" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*𝙳𝚘𝚗𝚝 𝚜𝚑𝚊𝚛𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚍𝚎 𝚠𝚒𝚝𝚑 𝚊𝚗𝚢𝚘𝚗𝚎!! 𝚄𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚍𝚎 𝚝𝚘 𝚌𝚛𝚎𝚊𝚝𝚎 𝚉𝙰𝙽𝚃𝙰-𝚇𝙼𝙳 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛 𝚋𝚘𝚝.*\n\n ◦ *Github:* https://github.com/`; 
+                        let desc = `*𝙷𝙴𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 𝚄𝚂𝙴𝚁!* 👋
+
+Qᴜᴇᴇɴ ꜱᴀɴᴜ ꜱᴇꜱꜱɪᴏɴ  𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳  ✅* ✅
+
+
+——————
+
+*✅ 𝚂𝚃𝙰𝚈 𝚄𝙿𝙳𝙰𝚃𝙴𝙳:*  
+𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻:  
+https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v
+
+*💻 Source Code:*  
+𝙵𝙾𝚁𝙺 & 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝚃𝙷𝙴 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 𝙾𝙽 𝙶𝙸𝚃𝙷𝚄𝙱:  
+https://github.com/Queen-sanu/QUEEN-SANU-MD
+
+> *🌸 © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 🌸*
+𝚂𝚃𝙰𝚈 𝙲𝙾𝙾𝙻 𝙰𝙽𝙳 𝙷𝙰𝙲𝙺 𝚂𝙼𝙰𝚁𝚃. *`;
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴢᴀɴᴛᴀ-xᴍᴅ",
-thumbnailUrl: "https://files.catbox.moe/ydaefv.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VbBNZJcAzNbvfssOXP28",
+title: "𝐐𝐔𝐄𝐄𝐍 𝐒𝐀𝐍𝐔",
+thumbnailUrl: "https://i.ibb.co/hFQGfphm/7091.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -93,14 +69,30 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*𝙳𝚘𝚗𝚝 𝚜𝚑𝚊𝚛𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚍𝚎 𝚠𝚒𝚝𝚑 𝚊𝚗𝚢𝚘𝚗𝚎!! 𝚄𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚍𝚎 𝚝𝚘 𝚌𝚛𝚎𝚊𝚝𝚎 𝚉𝙰𝙽𝚃𝙰-𝚇𝙼𝙳 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚄𝚜𝚎𝚛 𝚋𝚘𝚝.*\n\n ◦ *Github:* https://github.com`;
+                            let desc = `𝙷𝙴𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 𝚄𝚂𝙴𝚁!* 👋
+
+Qᴜᴇᴇɴ ꜱᴀɴᴜ ꜱᴇꜱꜱɪᴏɴ  𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳  ✅* ✅
+
+
+——————
+
+*✅ 𝚂𝚃𝙰𝚈 𝚄𝙿𝙳𝙰𝚃𝙴𝙳:*  
+𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻:  
+https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v
+
+*💻 Source Code:*  
+𝙵𝙾𝚁𝙺 & 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝚃𝙷𝙴 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 𝙾𝙽 𝙶𝙸𝚃𝙷𝚄𝙱:  
+https://github.com/Queen-sanu/QUEEN-SANU-MD
+
+> *🌸 © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 🌸*
+𝚂𝚃𝙰𝚈 𝙲𝙾𝙾𝙻 𝙰𝙽𝙳 𝙷𝙰𝙲𝙺 𝚂𝙼𝙰𝚁𝚃. *`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴢᴀɴᴛᴀ-xᴍᴅ",
-thumbnailUrl: "https://files.catbox.moe/ydaefv.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VbBNZJcAzNbvfssOXP28",
+title: "𝐐𝐔𝐄𝐄𝐍 𝐒𝐀𝐍𝐔",
+thumbnailUrl: "https://i.ibb.co/hFQGfphm/7091.jpg",
+sourceUrl: "https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
@@ -117,7 +109,7 @@ showAdAttribution: true
                     process.exit();
                 } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10);
-                    GIFTED_MD_PAIR_CODE();
+                    MALVIN_XD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -128,7 +120,7 @@ showAdAttribution: true
             }
         }
     }
-   return await GIFTED_MD_PAIR_CODE();
+   return await MALVIN_XD_PAIR_CODE();
 });/*
 setInterval(() => {
     console.log("☘️ 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗽𝗿𝗼𝗰𝗲𝘀𝘀...");
