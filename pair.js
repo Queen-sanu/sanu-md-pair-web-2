@@ -1,4 +1,44 @@
 const { makeid } = require('./gen-id');
+const express = require('express');
+const fs = require('fs');
+let router = express.Router();
+const pino = require("pino");
+const { default: makeWASocket, useMultiFileAuthState, delay, Browsers, makeCacheableSignalKeyStore, getAggregateVotesInPollMessage, DisconnectReason, WA_DEFAULT_EPHEMERAL, jidNormalizedUser, proto, getDevice, generateWAMessageFromContent, fetchLatestBaileysVersion, makeInMemoryStore, getContentType, generateForwardMessageContent, downloadContentFromMessage, jidDecode } = require('@whiskeysockets/baileys')
+
+const { upload } = require('./mega');
+function removeFile(FilePath) {
+    if (!fs.existsSync(FilePath)) return false;
+    fs.rmSync(FilePath, { recursive: true, force: true });
+}
+router.get('/', async (req, res) => {
+    const id = makeid();
+    let num = req.query.number;
+    async function MALVIN_XD_PAIR_CODE() {
+        const {
+            state,
+            saveCreds
+        } = await useMultiFileAuthState('./temp/' + id);
+        try {
+var items = ["Safari"];
+function selectRandomItem(array) {
+  var randomIndex = Math.floor(Math.random() * array.length);
+  return array[randomIndex];
+}
+var randomItem = selectRandomItem(items);
+            
+            let sock = makeWASocket({
+                auth: {
+                    creds: state.creds,
+                    keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
+                },
+                printQRInTerminal: false,
+                generateHighQualityLinkPreview: true,
+                logger: pino({ level: "fatal" }).child({ level: "fatal" }),
+                syncFullHistory: false,
+                browser: Browsers.macOS(randomItem)
+            });
+            if (!sock.authState.creds.registered) {
+                await delay(1500);
                 num = num.replace(/[^0-9]/g, '');
                 const code = await sock.requestPairingCode(num);
                 if (!res.headersSent) {
