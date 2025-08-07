@@ -75,32 +75,30 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "𝚀𝚄𝙴𝙴𝙽-𝚂𝙰𝙽𝚄=" + string_session;
+                        let md = "NIMA~MD&" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*𝙷𝙴𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 𝚄𝚂𝙴𝚁!* 👋
+                        let desc = `𝗛𝗘𝗬 𝗧𝗛𝗘𝗥𝗘 𝗟𝗢𝗞𝗨 𝗡𝗜𝗠𝗔𝗛 𝗨𝗦𝗘𝗥 👋🏻
 
-Qᴜᴇᴇɴ ꜱᴀɴᴜ ꜱᴇꜱꜱɪᴏɴ  𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳  ✅* ✅
+𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 𝗡𝗜𝗠𝗔 𝗠𝗗 𝗬𝗢𝗨𝗥 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗛𝗔𝗦 𝗕𝗘𝗘𝗡 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 !
 
+🔐 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗜𝗗: 𝗦𝗘𝗡𝗧 𝗔𝗕𝗢𝗩𝗘
+⚠️ 𝗞𝗘𝗘𝗣 𝗜𝗧 𝗦𝗔𝗙𝗘 ! 𝗗𝗢 𝗡𝗢𝗧 𝗦𝗛𝗔𝗥𝗘 𝗧𝗛𝗜𝗦 𝗜𝗗 𝗪𝗜𝗧𝗛 𝗔𝗡𝗬𝗢𝗡𝗘❗.
 
 ——————
 
-*✅ 𝚂𝚃𝙰𝚈 𝚄𝙿𝙳𝙰𝚃𝙴𝙳:*  
-𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻:  
-https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v
+𝗦𝗧𝗔𝗬 𝗨𝗣𝗗𝗔𝗧𝗘𝗗 :
+*ᴊᴏɪɴ ᴏᴜʀ ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ:*  
+https://youtube.com/@nimayt-i7y?si=GxN5wFtoRwzyDNUn
 
-*💻 Source Code:*  
-𝙵𝙾𝚁𝙺 & 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝚃𝙷𝙴 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 𝙾𝙽 𝙶𝙸𝚃𝙷𝚄𝙱:  
-https://github.com/Queen-sanu/QUEEN-SANU-MD
 
-> *🌸 © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 🌸*
-𝚂𝚃𝙰𝚈 𝙲𝙾𝙾𝙻 𝙰𝙽𝙳 𝙷𝙰𝙲𝙺 𝚂𝙼𝙰𝚁𝚃. *`;
+> 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆  𝗟𝗼𝗸𝘂 𝗡𝗶𝗺𝗮`;
                         await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "𝐐𝐔𝐄𝐄𝐍 𝐒𝐀𝐍𝐔",
-thumbnailUrl: "https://i.ibb.co/hFQGfphm/7091.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v",
+title: "𝗡𝗜𝗠𝗔 𝗠𝗗",
+thumbnailUrl: "https://files.catbox.moe/8r95u5.jpg",
+sourceUrl: "https://youtube.com/@nimayt-i7y?si=GxN5wFtoRwzyDNUn",
 mediaType: 1,
 renderLargerThumbnail: true
 }  
@@ -109,30 +107,28 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `𝙷𝙴𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 𝚄𝚂𝙴𝚁!* 👋
+                            let desc = `𝗛𝗘𝗬 𝗧𝗛𝗘𝗥𝗘 𝗟𝗢𝗞𝗨 𝗡𝗜𝗠𝗔𝗛 𝗨𝗦𝗘𝗥 👋🏻
 
-Qᴜᴇᴇɴ ꜱᴀɴᴜ ꜱᴇꜱꜱɪᴏɴ  𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳  ✅* ✅
+𝗧𝗛𝗔𝗡𝗞𝗦 𝗙𝗢𝗥 𝗨𝗦𝗜𝗡𝗚 𝗡𝗜𝗠𝗔 𝗠𝗗 𝗬𝗢𝗨𝗥 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗛𝗔𝗦 𝗕𝗘𝗘𝗡 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 !
 
+🔐 𝗦𝗘𝗦𝗦𝗜𝗢𝗡 𝗜𝗗: 𝗦𝗘𝗡𝗧 𝗔𝗕𝗢𝗩𝗘
+⚠️ 𝗞𝗘𝗘𝗣 𝗜𝗧 𝗦𝗔𝗙𝗘 ! 𝗗𝗢 𝗡𝗢𝗧 𝗦𝗛𝗔𝗥𝗘 𝗧𝗛𝗜𝗦 𝗜𝗗 𝗪𝗜𝗧𝗛 𝗔𝗡𝗬𝗢𝗡𝗘❗.
 
 ——————
 
-*✅ 𝚂𝚃𝙰𝚈 𝚄𝙿𝙳𝙰𝚃𝙴𝙳:*  
-𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙲𝙷𝙰𝙽𝙽𝙴𝙻:  
-https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v
+𝙎𝙏𝘼𝙔 𝙐𝙋𝘿𝘼𝙏𝙀𝘿:
+*ᴊᴏɪɴ ᴏᴜʀ ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ:*  
+https://youtube.com/@nimayt-i7y?si=GxN5wFtoRwzyDNUn
 
-*💻 Source Code:*  
-𝙵𝙾𝚁𝙺 & 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝚃𝙷𝙴 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 𝙾𝙽 𝙶𝙸𝚃𝙷𝚄𝙱:  
-https://github.com/Queen-sanu/QUEEN-SANU-MD
 
-> *🌸 © 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽 𝚂𝙰𝙽𝚄 🌸*
-𝚂𝚃𝙰𝚈 𝙲𝙾𝙾𝙻 𝙰𝙽𝙳 𝙷𝙰𝙲𝙺 𝚂𝙼𝙰𝚁𝚃. *`;
+> 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆  𝗟𝗼𝗸𝘂 𝗡𝗶𝗺𝗮`;
                             await sock.sendMessage(sock.user.id, {
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "𝐐𝐔𝐄𝐄𝐍 𝐒𝐀𝐍𝐔",
-thumbnailUrl: "https://i.ibb.co/hFQGfphm/7091.jpg",
-sourceUrl: "https://whatsapp.com/channel/0029VbAnyfs1NCrVt23GNa2v",
+title: "𝗡𝗜𝗠𝗔 𝗠𝗗",
+thumbnailUrl: "https://files.catbox.moe/8r95u5.jpg",
+sourceUrl: "https://youtube.com/@nimayt-i7y?si=GxN5wFtoRwzyDNUn",
 mediaType: 2,
 renderLargerThumbnail: true,
 showAdAttribution: true
